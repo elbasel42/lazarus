@@ -1,0 +1,1 @@
+export { revalidateData } from "./revalidateData";

@@ -1,6 +1,7 @@
 "use server";
 
 import { storage } from "@storage";
+import { revalidateData } from "@actions";
 
 export const setValue = async (formData: FormData) => {
   console.log({ formData });
@@ -13,5 +14,6 @@ export const setValue = async (formData: FormData) => {
     throw new Error("Value is required");
   }
 
-  storage.setItem(key, value);
+  await storage.setItem(key, value);
+  revalidateData();
 };
