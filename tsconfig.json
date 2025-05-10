@@ -20,7 +20,8 @@
     ],
     "paths": {
       "@storage": ["./app/storage"],
-      "@lib": ["app/lib"]
+      "@storage/actions": ["./app/storage/actions"],
+      "@lib": ["./app/lib"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
