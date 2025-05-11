@@ -3,8 +3,7 @@ import { githubLogin, googleLogin } from "./actions";
 const LoginPage = () => {
   return (
     <main>
-      <h1>Login Page</h1>
-      <form>
+      <form className="space-y-4">
         <button formAction={googleLogin} className="button button-primary">
           Login with Google
         </button>

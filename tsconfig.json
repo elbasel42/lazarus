@@ -23,7 +23,8 @@
       "@db/actions": ["./app/db/actions"],
       "@actions": ["./app/actions"],
       "@lib": ["./app/lib"],
-      "@auth": ["./app/auth"]
+      "@auth": ["./app/auth"],
+      "@auth/components": ["./app/auth/components"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
