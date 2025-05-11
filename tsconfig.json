@@ -21,8 +21,9 @@
     "paths": {
       "@storage": ["./app/storage"],
       "@storage/actions": ["./app/storage/actions"],
+      "@actions": ["./app/actions"],
       "@lib": ["./app/lib"],
-      "@actions": ["./app/actions"]
+      "@auth": ["./app/auth"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
