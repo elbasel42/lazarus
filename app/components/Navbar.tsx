@@ -26,18 +26,27 @@ export const NavBar = async () => {
   // }, []);
   return (
     <nav className="flex items-center text-sm mb-4 pb-2 border-b border-white/80 rounded-sm">
+      {/* TODO: extract Link into a client component that uses `usePathName` and takes a href prop to apply a white bottom border if the pathname matches the link */}
       <Link href={urls.home} className="!m-0 !p-0 hover:!bg-transparent">
         <Image
           className="mr-2"
           width={50}
           height={50}
-          src="/logo.png" 
+          src="/logo.png"
           alt="logo"
         />
       </Link>
       <Slash />
       {/* eslint-disable-next-line @next/next/no-img-element */}
-      {imageUrl && <img src={imageUrl} alt="profile pic" width={40} height={40} className="rounded-full mr-4"/>}
+      {imageUrl && (
+        <img
+          src={imageUrl}
+          alt="profile pic"
+          width={40}
+          height={40}
+          className="rounded-full mr-4"
+        />
+      )}
       {/* {imageUrl && <img src={imageUrl} alt="user image" />} */}
       <ul className="flex w-full justify-between">
         <div>
