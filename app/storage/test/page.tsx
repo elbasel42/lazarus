@@ -7,7 +7,6 @@ import {
 
 const TestStoragePage = async () => {
   const allKeys = await getAllKeys();
-  console.log({ allKeys });
 
   return (
     <main>
@@ -30,11 +29,11 @@ const TestStoragePage = async () => {
         <button className="button button-danger" formAction={deleteAllData}>
           Delete all data
         </button>
-        <table className="table">
+        <table className="table w-full">
           <thead className="table-header">
             <tr className="table-row">
-              <th className="table-head">key</th>
-              <th className="table-head">value</th>
+              <th className="table-head text-green-600">key</th>
+              <th className="table-head text-red-600">value</th>
             </tr>
           </thead>
           <tbody className="table-body">

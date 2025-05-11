@@ -4,7 +4,6 @@ import { storage } from "@storage";
 import { revalidateData } from "@actions";
 
 export const setValue = async (formData: FormData) => {
-  console.log({ formData });
   const key = formData.get("key")?.toString();
   const value = formData.get("value")?.toString();
   if (!key) {
