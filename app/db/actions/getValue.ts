@@ -1,8 +1,8 @@
 "use server";
 
-import { storage } from "@storage";
+import { db } from "@db";
 
 export const getValue = async (key: string) => {
-  const value = storage.get(key);
+  const value = db.get(key);
   return value;
 };

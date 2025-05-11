@@ -1,9 +1,4 @@
-import {
-  getAllKeys,
-  setValue,
-  getValue,
-  deleteAllData,
-} from "@storage/actions";
+import { getAllKeys, setValue, getValue, deleteAllData } from "@db/actions";
 
 const TestStoragePage = async () => {
   const allKeys = await getAllKeys();

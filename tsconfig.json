@@ -19,8 +19,8 @@
       }
     ],
     "paths": {
-      "@storage": ["./app/storage"],
-      "@storage/actions": ["./app/storage/actions"],
+      "@db": ["./app/db"],
+      "@db/actions": ["./app/db/actions"],
       "@actions": ["./app/actions"],
       "@lib": ["./app/lib"],
       "@auth": ["./app/auth"]

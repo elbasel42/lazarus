@@ -1,9 +1,9 @@
 "use server";
 
 import { revalidateData } from "@actions";
-import { storage } from "@storage";
+import { db } from "@db";
 
 export const deleteAllData = async () => {
-  await storage.clear("")
+  await db.clear();
   revalidateData();
 };
