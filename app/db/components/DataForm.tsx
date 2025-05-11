@@ -10,10 +10,10 @@ export const DataForm = () => {
         name="value"
         placeholder="Value"
       />
-      <button className="button button-primary" type="submit">
-        Submit
+      <button className="primary" type="submit">
+        Add data
       </button>
-      <button className="button button-danger" formAction={deleteAllData}>
+      <button className="danger" formAction={deleteAllData}>
         Delete all data
       </button>
     </form>

@@ -1,7 +1,9 @@
 export const urls = {
+  home: "/home",
   login: "/login",
   test: {
-    storage: "/storage/test",
+    root: "/test",
+    db: "/db/test",
     login: "/login/test",
   },
 };

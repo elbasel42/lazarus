@@ -1,40 +1,79 @@
 @import "tailwindcss";
 
 body {
-  @apply bg-black text-white p-2;
+  background-color: black;
+  color: white;
+  padding: 0.5rem;
+  margin: 0;
 }
 
 /* ! buttons */
 /* * -------------------------------------------------------- */
-.button {
-  @apply px-1 py-2 rounded-sm w-full block;
+button {
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  width: 100%;
+  display: block;
 }
 
-.button-primary {
-  @apply bg-white/90 text-black;
+button.primary {
+  background-color: rgba(255, 255, 255, 20);
+  color: black;
 }
 
-.button-danger {
-  @apply bg-red-600 text-white;
+button.danger {
+  background-color: red;
+  color: white;
 }
 
 /* ! inputs */
 /* * -------------------------------------------------------- */
 
-.text-input {
-  @apply bg-black/80 text-white block border-white/20 border rounded-sm px-1 py-2 w-full;
+input[type="text"] {
+  background-color: rgba(0, 0, 0, 80);
+  color: white;
+  display: block;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0.25rem;
+  padding: 0.5rem 0.75rem;
+  width: 100%;
 }
 
 /* ! table */
 /* ------------------------------------------------------------- */
-.table {
-  @apply border border-white/80;
+table {
+  width: 100%;
+  border-collapse: collapse;
 }
 
-.table-data {
-  @apply border border-white/80 p-2 w-20 text-center;
+td {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 0.5rem 0.75rem;
+  text-align: center;
 }
 
-.table-head {
-  @apply border border-white/80 p-2 w-20 text-center;
+th {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+  padding-block: 0.5rem;
+}
+
+/* ! Link */
+/* * -------------------------------------------------------- */
+a {
+  display: block;
+  color: white;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: rgba(255, 255, 255, 0.2);
+}
+
+/* ! lists */
+/* * -------------------------------------------------------- */
+ul {
+  display: flex;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }

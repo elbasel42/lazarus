@@ -3,7 +3,7 @@ import { getAllKeys, getValue } from "@db/actions";
 export const DataTable = async () => {
   const allKeys = await getAllKeys();
   return (
-    <table className="table w-full mt-4">
+    <table className="table mt-4">
       <thead className="table-header">
         <tr className="table-row">
           <th className="table-head text-green-600">key</th>
