@@ -19,11 +19,17 @@
       }
     ],
     "paths": {
-      "@db": ["./app/db"],
-      "@db/actions": ["./app/db/actions"],
+      // ! root
+      "@components": ["./app/components"],
       "@actions": ["./app/actions"],
       "@lib": ["./app/lib"],
+      // ! db
+      "@db": ["./app/db"],
+      "@db/actions": ["./app/db/actions"],
+      "@db/components": ["./app/db/components"],
+      // ! auth
       "@auth": ["./app/auth"],
+      "@auth/actions": ["./app/auth/actions"],
       "@auth/components": ["./app/auth/components"]
     }
   },
