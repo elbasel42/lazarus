@@ -41,7 +41,7 @@ const TestStoragePage = async () => {
           {allKeys.map(async (key) => {
             const value = await getValue(key);
             return (
-              <tr className="table-row">
+              <tr key={key} className="table-row">
                 <td className="table-data">{key}</td>
                 <td className="table-data">{value?.toString()}</td>
               </tr>
