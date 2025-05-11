@@ -16,10 +16,10 @@ export default function Home() {
           a month!
         </p>
         <div className="flex gap-4 !bg-black/5 w-fit mx-auto mt-4">
-          <button className="!w-[35vw] lg:!w-[20vw] primary !rounded-full">
+          <button className="w-[35vw] px-1 py-2 text-sm md:!w-[30vw] primary !rounded-full">
             Get Started
           </button>
-          <button className="!w-[35vw] lg:!w-[20vw] primary border border-white/20 !rounded-full !bg-black !text-white ">
+          <button className="w-[35vw] px-1 py-2 text-sm md:!w-[30vw] primary border border-white/20 !rounded-full !bg-black !text-white ">
             Contact Us
           </button>
         </div>
