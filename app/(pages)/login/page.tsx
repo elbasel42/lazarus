@@ -1,5 +1,4 @@
 import { GithubLogin, GoogleLogin } from "@auth/components";
-import { Logout } from "../../auth/components/Logout";
 
 const LoginPage = () => {
   return (

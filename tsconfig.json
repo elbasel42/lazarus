@@ -23,6 +23,7 @@
       "@components": ["./app/components"],
       "@actions": ["./app/actions"],
       "@lib": ["./app/lib"],
+      "@utils": ["./app/utils"],
       // ! db
       "@db": ["./app/db"],
       "@db/actions": ["./app/db/actions"],

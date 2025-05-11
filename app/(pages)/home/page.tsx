@@ -1,11 +1,10 @@
-import Link from "next/link";
-import { urls } from "@lib";
+import { Net } from "@components";
 
 export default function Home() {
   return (
     <main>
+      <Net />
       <h1>Homepage</h1>
-      <Link href={urls.login}>Login</Link>
     </main>
   );
 }

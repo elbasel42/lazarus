@@ -3,7 +3,7 @@ import { Logout } from "../../auth/components/Logout";
 
 const ProfilePage = () => {
   return (
-    <main>
+    <main className="space-y-4">
       <AuthSession />
       <Logout />
     </main>

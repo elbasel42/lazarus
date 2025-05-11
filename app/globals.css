@@ -61,11 +61,10 @@ th {
 /* ! Link */
 /* * -------------------------------------------------------- */
 a {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
   display: block;
   color: white;
-  text-decoration: underline;
-  text-decoration-style: wavy;
-  text-decoration-color: rgba(255, 255, 255, 0.2);
+  text-decoration-color: rgba(255, 255, 255, 0.7);
 }
 
 /* ! lists */
