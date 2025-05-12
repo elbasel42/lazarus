@@ -1,11 +1,12 @@
-import { AuthSession } from "@auth/components";
-import { Logout } from "../../auth/components/Logout";
+import { AuthSession, Logout } from "@auth/components";
+import { auth } from "@auth";
 
-const ProfilePage = () => {
+const ProfilePage = async () => {
+  const session = await auth();
   return (
     <main className="space-y-4">
       <AuthSession />
-      <Logout />
+      {session && <Logout />}
     </main>
   );
 };

@@ -24,6 +24,7 @@
       "@actions": ["./app/actions"],
       "@lib": ["./app/lib"],
       "@utils": ["./app/utils"],
+      "@icons": ["./app/icons"],
       // ! db
       "@db": ["./app/db"],
       "@db/actions": ["./app/db/actions"],
