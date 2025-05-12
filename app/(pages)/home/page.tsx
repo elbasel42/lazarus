@@ -7,8 +7,9 @@ import { redirect } from "next/navigation";
 const Home = async () => {
   const session = await auth();
   if (session !== null) {
-    redirect("/profile");
+    redirect("/study");
   }
+
   return (
     <>
       <Net />

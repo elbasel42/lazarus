@@ -33,9 +33,10 @@ export const NavBar = async () => {
           className="rounded-full mr-4"
         />
       )}
-      <ul className="flex w-full justify-between gap-2 p-0 m-0">
-        <li>{!session && <NavLink href={urls.login}>Login</NavLink>}</li>
-        <li>{session && <NavLink href={urls.profile}> Profile</NavLink>}</li>
+      <ul className="flex ml-auto justify-between gap-2 p-0 m-0">
+        <NavLink href={urls.contact}>Contact</NavLink>
+        {!session && <NavLink href={urls.login}>Login</NavLink>}
+        {session && <NavLink href={urls.profile}> Profile</NavLink>}
       </ul>
     </nav>
   );
