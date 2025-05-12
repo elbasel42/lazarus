@@ -9,7 +9,7 @@ const ContactPage = () => {
         href="https://wa.me/01114565006"
         className="flex items-center justify-center gap-2 mt-10 text-2xl"
       >
-        <WhatsappIcon />
+        <WhatsappIcon className="w-9 h-9" />
         <span>Whatsapp</span>
       </a>
       <p className="text-center text-sm mt-2">+201114565006</p>
@@ -17,7 +17,7 @@ const ContactPage = () => {
         className="flex items-center justify-center gap-2 mt-10 text-2xl"
         href="mailto:abdelrahman.elbasel42@gmail.com"
       >
-        <Mail />
+        <Mail className="w-9 h-9 text-amber-300"/>
         <span>Email</span>
       </a>
       <p className="text-center text-sm mt-2">

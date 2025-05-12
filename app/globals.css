@@ -16,7 +16,6 @@ button {
 button:hover {
   @apply ring-2 ring-blue-500;
 }
-
-.lucide {
+/* .lucide {
   vector-effect: non-scaling-stroke;
-}
+} */

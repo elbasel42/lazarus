@@ -1,6 +1,14 @@
-export const WhatsappIcon = () => {
+import { IconProps } from "./types/IconProps";
+
+export const WhatsappIcon = ({ className, width, height }: IconProps) => {
   return (
-    <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 175.216 175.552" className="w-9 h-9">
+    <svg
+      width={width || 24}
+      height={height || 24}
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 175.216 175.552"
+      className={className}
+    >
       <defs>
         <linearGradient
           id="b"
