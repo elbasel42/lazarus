@@ -1,4 +1,3 @@
-/* eslint-disable */
 "use client";
 
 import Script from "next/script";
@@ -12,10 +11,12 @@ export const Net = () => {
   const [bgHidden, setBgHidden] = useState(true);
 
   const initVanta = () => {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     if (!(window as any).THREE || !(window as any).VANTA) {
       setTimeout(initVanta, 1000);
     }
 
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const effect = (window as any).VANTA.NET({
       el: "#netElem",
       mouseControls: true,
@@ -25,6 +26,7 @@ export const Net = () => {
       scaleMobile: 1.0,
       backgroundColor: 0x0,
       color: 0x682e2e,
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       THREE: (window as any).THREE,
     });
     setBgHidden(false);
@@ -79,7 +81,9 @@ export const Net = () => {
       />
       <Script
         src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"
-        onReady={() => { sleep(1).then(() => setVantaReady(true)); }}
+        onReady={() => {
+          sleep(1).then(() => setVantaReady(true));
+        }}
         onError={(e) => console.log(e)}
       />
     </>

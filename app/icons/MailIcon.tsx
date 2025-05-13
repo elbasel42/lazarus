@@ -1,16 +1,6 @@
 import { IconProps } from "./types/IconProps";
 
-export const MailIcon = ({
-  className,
-  fill,
-  strokeWidth,
-  stroke,
-  viewBox,
-  width,
-  strokeLineCap,
-  strokeLinejoin,
-  height,
-}: IconProps) => {
+export const MailIcon = ({ className }: IconProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

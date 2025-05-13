@@ -10,7 +10,7 @@ export const NavBar = async () => {
     <nav className="flex items-center pb-2 mb-4 text-sm border-b rounded-sm border-white/80">
       <HomeLogo />
       <Slash />
-      <UserImage />
+      <UserImage imageUrl={imageUrl} />
       <ul className="flex justify-between gap-2 p-0 m-0 ml-auto">
         <NavLink href={urls.contact}>Contact</NavLink>
         {!session && <NavLink href={urls.login}>Login</NavLink>}
