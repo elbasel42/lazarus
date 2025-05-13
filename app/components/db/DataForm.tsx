@@ -1,4 +1,4 @@
-import { deleteAllData, setValue } from "@db/actions";
+import { deleteAllData, setValue } from "@server/db";
 
 export const DataForm = () => {
   return (
@@ -10,10 +10,10 @@ export const DataForm = () => {
         name="value"
         placeholder="Value"
       />
-      <button className="primary w-full px-1 py-2" type="submit">
+      <button className="w-full px-1 py-2 primary" type="submit">
         Add data
       </button>
-      <button className="danger w-full px-1 py-2" formAction={deleteAllData}>
+      <button className="w-full px-1 py-2 danger" formAction={deleteAllData}>
         Delete all data
       </button>
     </form>

@@ -1,4 +1,4 @@
-import { getAllKeys, getValue } from "@db/actions";
+import { getAllKeys, getValue } from "@server/db";
 
 export const DataTable = async () => {
   const allKeys = await getAllKeys();
@@ -6,10 +6,10 @@ export const DataTable = async () => {
     <table className="w-full border-collapse">
       <thead>
         <tr>
-          <th className="border text-center border-white/20 text-green-600">
+          <th className="text-center text-green-600 border border-white/20">
             key
           </th>
-          <th className="border text-center border-white/20 text-red-600">
+          <th className="text-center text-red-600 border border-white/20">
             value
           </th>
         </tr>
@@ -19,10 +19,10 @@ export const DataTable = async () => {
           const value = await getValue(key);
           return (
             <tr key={key}>
-              <td className="border border-white/20 px-1 py-2 text-center">
+              <td className="px-1 py-2 text-center border border-white/20">
                 {key}
               </td>
-              <td className="border border-white/20 px-1 py-2 text-center">
+              <td className="px-1 py-2 text-center border border-white/20">
                 {value?.toString()}
               </td>
             </tr>

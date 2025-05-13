@@ -1,10 +1,11 @@
-import { googleLogin } from "@auth/actions";
+import { googleLogin } from "@server/auth";
 import { GoogleIcon } from "@icons";
+import { loginButtonStyle } from "./styles";
 
 export const GoogleLogin = () => {
   return (
     <form action={googleLogin}>
-      <button type="submit" className="bg-blue-800/20 px-8 flex items-center gap-2 rounded-sm py-2 mx-auto ">
+      <button type="submit" className={loginButtonStyle}>
         <GoogleIcon />
         <span>Login with Google</span>
       </button>

@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
-import { auth } from "@auth";
-import { Slash } from "@components";
+import { auth } from "../../server/auth/auth";
+import { Slash } from "@icons";
 import { urls } from "@lib";
 import Image from "next/image";
 import Link from "next/link";
@@ -12,7 +12,7 @@ export const NavBar = async () => {
   const imageUrl = user?.image;
 
   return (
-    <nav className="flex items-center text-sm mb-4 pb-2 border-b border-white/80 rounded-sm">
+    <nav className="flex items-center pb-2 mb-4 text-sm border-b rounded-sm border-white/80">
       {/* TODO: extract Link into a client component that uses `usePathName` and takes a href prop to apply a white bottom border if the pathname matches the link */}
       <Link href={urls.home}>
         <Image
@@ -30,10 +30,10 @@ export const NavBar = async () => {
           alt="profile pic"
           width={30}
           height={30}
-          className="rounded-full mr-4"
+          className="mr-4 rounded-full"
         />
       )}
-      <ul className="flex ml-auto justify-between gap-2 p-0 m-0">
+      <ul className="flex justify-between gap-2 p-0 m-0 ml-auto">
         <NavLink href={urls.contact}>Contact</NavLink>
         {!session && <NavLink href={urls.login}>Login</NavLink>}
         {session && <NavLink href={urls.profile}> Profile</NavLink>}

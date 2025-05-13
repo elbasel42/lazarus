@@ -1,4 +1,4 @@
-import { DataTable, DataForm } from "@db/components";
+import { DataTable, DataForm } from "@components/db";
 
 const TestStoragePage = async () => {
   return (

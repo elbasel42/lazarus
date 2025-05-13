@@ -3,8 +3,8 @@ import { IconProps } from "./types/IconProps";
 export const WhatsappIcon = ({ className, width, height }: IconProps) => {
   return (
     <svg
-      width={width || 24}
-      height={height || 24}
+      width={width}
+      height={height}
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 175.216 175.552"
       className={className}

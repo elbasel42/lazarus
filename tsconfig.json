@@ -21,18 +21,26 @@
     "paths": {
       // ! root
       "@components": ["./app/components"],
-      "@actions": ["./app/actions"],
       "@lib": ["./app/lib"],
       "@utils": ["./app/utils"],
       "@icons": ["./app/icons"],
+      // ! server
+      "@server": ["./app/server"],
+      "@server/auth": ["./app/server/auth"],
+      "@server/db": ["./app/server/db"],
+      "@server/caching": ["./app/server/caching"],
       // ! db
-      "@db": ["./app/db"],
-      "@db/actions": ["./app/db/actions"],
-      "@db/components": ["./app/db/components"],
+      "@db": ["./app/db.ts"],
+      "@components/db": ["./app/components/db"],
       // ! auth
       "@auth": ["./app/auth"],
       "@auth/actions": ["./app/auth/actions"],
-      "@auth/components": ["./app/auth/components"]
+      "@auth/components": ["./app/auth/components"],
+      // ! styles
+      "@styles/button": ["./app/styles/button"],
+      "@styles/typography": ["./app/styles/typography"],
+      "@styles/link": ["./app/styles/link"]
+      // ! server
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

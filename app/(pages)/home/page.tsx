@@ -1,4 +1,4 @@
-import { auth } from "@auth";
+import { auth } from "../../server/auth/auth";
 import { Net } from "@components";
 import { urls } from "@lib";
 import Link from "next/link";

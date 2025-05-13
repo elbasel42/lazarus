@@ -1,13 +1,11 @@
-import { githubLogin } from "@auth/actions";
+import { githubLogin } from "@server/auth";
 import { GithubIcon } from "@icons";
+import { loginButtonStyle } from "./styles";
 
 export const GithubLogin = () => {
   return (
     <form action={githubLogin}>
-      <button
-        type="submit"
-        className="px-8 bg-gray-600/80 py-2 flex items-center gap-2 mx-auto rounded-sm"
-      >
+      <button type="submit" className={loginButtonStyle}>
         <GithubIcon />
         <span>Login with Github</span>
       </button>

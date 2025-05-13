@@ -1,0 +1,1 @@
+export const buttonStyle = "hover:ring-2 ring-blue-500"

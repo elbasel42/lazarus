@@ -1,4 +1,4 @@
-import { auth } from "@auth";
+import { auth } from "../../server/auth/auth";
 import { UserImage } from "@components";
 
 export const AuthSession = async () => {

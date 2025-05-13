@@ -1,6 +1,6 @@
 "use server";
 
-import { revalidateData } from "@actions";
+import { revalidateData } from "../caching";
 import { db } from "@db";
 
 export const setValue = async (formData: FormData) => {
