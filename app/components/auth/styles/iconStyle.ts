@@ -1,0 +1,1 @@
+export const IconStyle = "md:w-20 md:h-20 w-10 h-10"

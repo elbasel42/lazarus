@@ -4,7 +4,7 @@ export const WhatsappIcon = ({ className, width, height }: IconProps) => {
   return (
     <svg
       width={width}
-      height={height}
+      height={height} 
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 175.216 175.552"
       className={className}
