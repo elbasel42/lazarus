@@ -34,4 +34,4 @@ export default RootLayout;
 
 // ! styles
 const htmlClassName = "m-0 p-0";
-const bodyClassName = `${geistSans.variable} ${geistMono.variable} antialiased p-4 m-0 bg-black text-white min-h-screen overflow-hidden`;
+const bodyClassName = `${geistSans.variable} ${geistMono.variable} antialiased p-4 m-0 bg-black text-white min-h-screen`;

@@ -1,0 +1,1 @@
+export const linkStyle = "hover:underline text-blue-500 cursor-pointer"

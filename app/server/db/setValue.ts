@@ -1,7 +1,7 @@
 "use server";
 
 import { revalidateData } from "../caching";
-import { db } from "../../db";
+import { db } from "../../lib/db";
 
 export const setValue = async (formData: FormData) => {
   const key = formData.get("key")?.toString();

@@ -20,27 +20,22 @@
     ],
     "paths": {
       // ! root
-      "@components": ["./app/components"],
       "@lib": ["./app/lib"],
       "@utils": ["./app/utils"],
       "@icons": ["./app/icons"],
+      // ! components
+      "@components": ["./app/components"],
+      "@components/db": ["./app/components/db"],
+      "@components/auth": ["./app/components/auth"],
       // ! server
-      "@server": ["./app/server"],
       "@server/auth": ["./app/server/auth"],
       "@server/db": ["./app/server/db"],
       "@server/caching": ["./app/server/caching"],
-      // ! db
-      "@db": ["./app/db.ts"],
-      "@components/db": ["./app/components/db"],
-      // ! auth
-      "@auth": ["./app/auth"],
-      "@auth/actions": ["./app/auth/actions"],
-      "@auth/components": ["./app/auth/components"],
       // ! styles
       "@styles/button": ["./app/styles/button"],
       "@styles/typography": ["./app/styles/typography"],
-      "@styles/link": ["./app/styles/link"]
-      // ! server
+      "@styles/link": ["./app/styles/link"],
+      "@styles/input": ["./app/styles/input"],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

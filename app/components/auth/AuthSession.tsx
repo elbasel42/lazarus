@@ -1,4 +1,4 @@
-import { auth } from "../../server/auth/auth";
+import { auth } from "@lib";
 import { UserImage } from "@components";
 
 export const AuthSession = async () => {
@@ -8,8 +8,9 @@ export const AuthSession = async () => {
   const email = user?.email;
   const image = user?.image;
   // const expires = session?.expires;
+
   return (
-    <div className="flex gap-4">
+    <div className={divStyle}>
       <UserImage url={image} />
       <div>
         <p>{name}</p>
@@ -18,3 +19,6 @@ export const AuthSession = async () => {
     </div>
   );
 };
+
+// ! Styles
+const divStyle = "flex gap-4";

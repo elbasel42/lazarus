@@ -16,7 +16,7 @@ const ContactPage = () => {
         </div>
         <p className={pStyle}>+201114565006</p>
       </a>
-      <a className={aStyle} href={emailHref}>
+      <a className={twMerge(buttonStyle, aStyle)} href={emailHref}>
         <div className={divStyle}>
           <MailIcon className={mailIconStyle} />
           <span className={spanStyle}>Email</span>

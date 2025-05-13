@@ -1,0 +1,1 @@
+export const primaryButtonStyle = "bg-white/80 text-black"

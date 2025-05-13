@@ -1,6 +1,6 @@
 "use server";
 
-import { signIn } from "./auth";
+import { signIn } from "../../lib/auth";
 
 export const githubLogin = async () => {
   await signIn("github");

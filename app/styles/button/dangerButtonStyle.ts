@@ -1,0 +1,1 @@
+export const dangerButtonStyle = "bg-red-500 text-white hover:bg-red-600 focus:ring-red-500 focus:ring-offset-red-200 active:bg-red-700 disabled:bg-red-300 disabled:text-gray-400";  
