@@ -23,7 +23,9 @@ const Home = async () => {
           <Link href={urls.login}>
             <button className={getStartedButtonStyle}>Get Started</button>
           </Link>
-          <button className={contactButtonStyle}>Contact Us</button>
+          <Link href={urls.contact}>
+            <button className={contactButtonStyle}>Contact Us</button>
+          </Link>
         </div>
       </main>
     </>
@@ -34,7 +36,7 @@ export default Home;
 
 // ! Styles
 const h1Style = "pt-24 text-4xl lg:text-8xl font-bold text-center";
-
+const mainStyle = "min-h-[85vh] bg-logo"
 const pStyle = "text-center lg:text-4xl mt-8";
 const spanStyle = "underline decoration-wavy decoration-purple-800 font-bold";
 const divStyle = "flex gap-4 !bg-black/5 w-fit mx-auto mt-8";
