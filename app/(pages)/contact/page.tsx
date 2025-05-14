@@ -37,8 +37,8 @@ const aStyle =
   "flex flex-col items-center justify-center gap-2 mt-10 text-2xl bg-black/80 w-[50svw] px-4 py-8 rounded-2xl mx-auto";
 // * ----------------------------------------------------------------------------------
 const divStyle = "flex items-center justify-center gap-2";
-const spanStyle = "text-6xl";
-const pStyle = "text-center text-2xl md:text-4xl mt-2";
+const spanStyle = "text-2l md:text-4xl lg:text-6xl";
+const pStyle = "text-center text-lg md:text-2xl lg:text-4xl mt-2";
 // * ----------------------------------------------------------------------------------
 const whatsappIconStyle = "w-20 h-20";
 const mailIconStyle = "w-20 h-20 text-green-300";
