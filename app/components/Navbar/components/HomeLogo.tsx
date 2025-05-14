@@ -1,12 +1,12 @@
 import { urls } from "@lib";
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
 
 export const HomeLogo = () => {
   return (
     <Link href={urls.home} className={linkStyle}>
       <Image
-        className={linkStyle}
+        className={imageStyle}
         width={50}
         height={50}
         src="/logo.png"
@@ -17,5 +17,5 @@ export const HomeLogo = () => {
 };
 
 // ! Styles
-const linkStyle = "hover:scale-110"
-const imageStyle = "mr-2"
+const linkStyle = "hover:scale-110";
+const imageStyle = "mr-2";

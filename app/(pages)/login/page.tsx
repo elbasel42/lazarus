@@ -6,8 +6,9 @@ import { redirect } from "next/navigation";
 const LoginPage = async () => {
   const session = await auth();
   if (session) {
-    return redirect('/profile')
+    return redirect("/profile");
   }
+
   return (
     <>
       <Globe />
@@ -25,6 +26,6 @@ const LoginPage = async () => {
 export default LoginPage;
 
 // ! Styles
-const mainStyle = "pt-[20vh] space-y-4 min-h-[85vh]";
+const mainStyle = "pt-[10vh] space-y-4 min-h-[80vh]";
 const h1Style = "text-2xl lg:text-6xl mb-8 text-center font-bold";
 const divStyle = "bg-black/80 space-y-4 w-fit mx-auto";

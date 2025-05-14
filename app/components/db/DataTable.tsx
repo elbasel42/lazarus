@@ -1,5 +1,4 @@
 import { getAllKeys, getValue } from "@server/db";
-import { buttonStyle, primaryButtonStyle } from "@styles/button";
 import {
   tableStyle,
   tdStyle as tdBaseStyle,
@@ -35,4 +34,3 @@ export const DataTable = async () => {
 // ! Styles
 const thStyle = twMerge(thBaseStyle, "border border-white/20");
 const tdStyle = twMerge(tdBaseStyle, "border border-white/20");
-const filterButtonStyle = twMerge(buttonStyle, primaryButtonStyle, "w-20");

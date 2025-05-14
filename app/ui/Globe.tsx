@@ -1,14 +1,15 @@
 "use client";
 
+import { getRandomColor, sleep } from "@utils";
 import Script from "next/script";
 import { useEffect, useState } from "react";
 import { twMerge } from "tailwind-merge";
-import { getRandomColor, sleep } from "@utils";
 
 declare global {
   interface Window {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     VANTA: any;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     THREE: any;
   }
 }
