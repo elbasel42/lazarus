@@ -34,12 +34,12 @@ const mainStyle = "bg-logo";
 const h1Style = "font-bold text-5xl text-center pt-20 flex flex-col gap-2";
 // * ----------------------------------------------------------------------------------
 const aStyle =
-  "flex flex-col items-center justify-center gap-2 mt-10 text-2xl bg-black/80 w-[50svw] px-4 py-8 rounded-2xl mx-auto";
+  "flex flex-col items-center justify-center gap-2 mt-10 text-2xl bg-black/80 w-[80vw] md:w-[50vw] lg px-4 py-8 rounded-2xl mx-auto";
 // * ----------------------------------------------------------------------------------
 const divStyle = "flex items-center justify-center gap-2";
 const spanStyle = "text-2l md:text-4xl lg:text-6xl";
 const pStyle = "text-center text-lg md:text-2xl lg:text-4xl mt-2";
 // * ----------------------------------------------------------------------------------
-const whatsappIconStyle = "w-20 h-20";
-const mailIconStyle = "w-20 h-20 text-green-300";
+const whatsappIconStyle = "w-10 h-10 md:w-20 md:h-20";
+const mailIconStyle = "w-8 h-8 md:w-20 md:h-20 text-green-300";
 // * ----------------------------------------------------------------------------------
