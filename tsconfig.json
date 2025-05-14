@@ -27,6 +27,7 @@
       "@components": ["./app/components"],
       "@components/db": ["./app/components/db"],
       "@components/auth": ["./app/components/auth"],
+      "@ui": ["./app/ui"],
       // ! server
       "@server/auth": ["./app/server/auth"],
       "@server/db": ["./app/server/db"],

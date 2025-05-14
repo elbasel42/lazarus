@@ -1,4 +1,4 @@
-import { Net } from "@components";
+import { Net } from "@ui";
 import { auth, urls } from "@lib";
 import { buttonStyle, primaryButtonStyle } from "@styles/button";
 import Link from "next/link";
