@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@auth/unstorage-adapter':
+        specifier: ^2.9.1
+        version: 2.9.1(unstorage@1.16.0(@upstash/redis@1.34.9))
       '@upstash/redis':
         specifier: ^1.34.9
         version: 1.34.9
@@ -84,6 +87,11 @@ packages:
         optional: true
       nodemailer:
         optional: true
+
+  '@auth/unstorage-adapter@2.9.1':
+    resolution: {integrity: sha512-8Blk8ygNYuVpRBwzhb5EatGFkSHsRvtDmk4Ag2ZSNyeSSN7g4orsz89F4CAUJAx+Z+wxZFtyYPPAGscw0BkHIQ==}
+    peerDependencies:
+      unstorage: ^1.10.1
 
   '@emnapi/core@1.4.3':
     resolution: {integrity: sha512-4m62DuCE07lw01soJwPiBGC0nAww0Q+RY70VZ+n49yDIO13yyinhbWCeNnaob0lakDtWQzSdtNWzJeOJt2ma+g==}
@@ -2182,6 +2190,15 @@ snapshots:
       oauth4webapi: 3.5.1
       preact: 10.24.3
       preact-render-to-string: 6.5.11(preact@10.24.3)
+
+  '@auth/unstorage-adapter@2.9.1(unstorage@1.16.0(@upstash/redis@1.34.9))':
+    dependencies:
+      '@auth/core': 0.39.1
+      unstorage: 1.16.0(@upstash/redis@1.34.9)
+    transitivePeerDependencies:
+      - '@simplewebauthn/browser'
+      - '@simplewebauthn/server'
+      - nodemailer
 
   '@emnapi/core@1.4.3':
     dependencies:

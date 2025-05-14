@@ -37,6 +37,7 @@
       "@styles/typography": ["./app/styles/typography"],
       "@styles/link": ["./app/styles/link"],
       "@styles/input": ["./app/styles/input"],
+      "@styles/table": ["./app/styles/table"],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

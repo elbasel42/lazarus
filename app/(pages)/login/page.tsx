@@ -1,7 +1,13 @@
 import { GithubLogin, GoogleLogin } from "@components/auth";
+import { auth } from "@lib";
 import { Globe } from "@ui";
+import { redirect } from "next/navigation";
 
-const LoginPage = () => {
+const LoginPage = async () => {
+  const session = await auth();
+  if (session) {
+    return redirect('/profile')
+  }
   return (
     <>
       <Globe />

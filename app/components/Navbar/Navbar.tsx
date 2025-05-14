@@ -7,11 +7,11 @@ export const NavBar = async () => {
   const user = session?.user;
   const imageUrl = user?.image;
   return (
-    <nav className="flex items-center pb-2 mb-4 text-sm border-b rounded-sm border-white/80">
+    <nav className={navStyle}>
       <HomeLogo />
       <Slash />
       <UserImage imageUrl={imageUrl} />
-      <ul className="flex justify-between gap-2 p-0 m-0 ml-auto">
+      <ul className={ulStyle}>
         <NavLink href={urls.contact}>Contact</NavLink>
         {!session && <NavLink href={urls.login}>Login</NavLink>}
         {session && <NavLink href={urls.profile}> Profile</NavLink>}
@@ -19,3 +19,8 @@ export const NavBar = async () => {
     </nav>
   );
 };
+
+// ! Styles
+const navStyle =
+  "flex items-center pb-2 mb-4 text-sm border-b rounded-sm border-white/80";
+const ulStyle = "flex justify-between gap-2 p-0 m-0 ml-auto";

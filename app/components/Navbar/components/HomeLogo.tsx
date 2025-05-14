@@ -4,9 +4,9 @@ import Image from "next/image";
 
 export const HomeLogo = () => {
   return (
-    <Link href={urls.home}>
+    <Link href={urls.home} className={linkStyle}>
       <Image
-        className="mr-2"
+        className={linkStyle}
         width={50}
         height={50}
         src="/logo.png"
@@ -15,3 +15,7 @@ export const HomeLogo = () => {
     </Link>
   );
 };
+
+// ! Styles
+const linkStyle = "hover:scale-110"
+const imageStyle = "mr-2"

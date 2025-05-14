@@ -1,0 +1,1 @@
+export const tableStyle = "w-full border-collapse"

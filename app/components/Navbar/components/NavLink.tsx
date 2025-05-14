@@ -8,9 +8,11 @@ interface NavLinkProps {
 export const NavLink = ({ href, children }: NavLinkProps) => {
   return (
     <li>
-      <Link className="border border-white/20 p-2 rounded-sm" href={href}>
+      <Link className={linkStyle} href={href}>
         {children}
       </Link>
     </li>
   );
 };
+
+const linkStyle = "border border-white/20 p-2 rounded-sm hover:bg-white/10 hover:ring-2 ring-blue-600";

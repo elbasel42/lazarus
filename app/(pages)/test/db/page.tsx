@@ -2,7 +2,7 @@ import { DataTable, DataForm } from "@components/db";
 
 const TestStoragePage = async () => {
   return (
-    <main>
+    <main className={mainStyle}>
       <DataForm />
       <DataTable />
     </main>
@@ -10,3 +10,6 @@ const TestStoragePage = async () => {
 };
 
 export default TestStoragePage;
+
+// ! Styles
+const mainStyle = "space-y-4";

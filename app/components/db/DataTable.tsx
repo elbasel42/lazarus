@@ -1,17 +1,20 @@
 import { getAllKeys, getValue } from "@server/db";
+import { buttonStyle, primaryButtonStyle } from "@styles/button";
+import {
+  tableStyle,
+  tdStyle as tdBaseStyle,
+  thStyle as thBaseStyle,
+} from "@styles/table";
+import { twMerge } from "tailwind-merge";
 
 export const DataTable = async () => {
   const allKeys = await getAllKeys();
   return (
-    <table className="w-full border-collapse">
+    <table className={tableStyle}>
       <thead>
         <tr>
-          <th className="text-center text-green-600 border border-white/20">
-            key
-          </th>
-          <th className="text-center text-red-600 border border-white/20">
-            value
-          </th>
+          <th className={thStyle}>key</th>
+          <th className={thStyle}>value</th>
         </tr>
       </thead>
       <tbody>
@@ -19,12 +22,8 @@ export const DataTable = async () => {
           const value = await getValue(key);
           return (
             <tr key={key}>
-              <td className="px-1 py-2 text-center border border-white/20">
-                {key}
-              </td>
-              <td className="px-1 py-2 text-center border border-white/20">
-                {value?.toString()}
-              </td>
+              <td className={tdStyle}>{key}</td>
+              <td className={tdStyle}>{value?.toString()}</td>
             </tr>
           );
         })}
@@ -32,3 +31,8 @@ export const DataTable = async () => {
     </table>
   );
 };
+
+// ! Styles
+const thStyle = twMerge(thBaseStyle, "border border-white/20");
+const tdStyle = twMerge(tdBaseStyle, "border border-white/20");
+const filterButtonStyle = twMerge(buttonStyle, primaryButtonStyle, "w-20");

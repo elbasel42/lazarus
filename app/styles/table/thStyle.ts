@@ -1,0 +1,1 @@
+export const thStyle = "text-center px-1 py-2"
