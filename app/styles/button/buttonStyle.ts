@@ -1,1 +1,1 @@
-export const buttonStyle = "w-full hover:ring-2 ring-blue-500 px-1 py-2 rounded-sm"
+export const buttonStyle = "w-full hover:ring-2 ring-blue-500 p-2 rounded-lg"

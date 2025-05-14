@@ -33,16 +33,17 @@ const Home = async () => {
 export default Home;
 
 // ! Styles
-const h1Style = "pt-24 text-8xl font-bold text-center";
-const pStyle = "text-center text-4xl mt-8";
+const h1Style = "pt-24 text-4xl lg:text-8xl font-bold text-center";
+
+const pStyle = "text-center lg:text-4xl mt-8";
 const spanStyle = "underline decoration-wavy decoration-purple-800 font-bold";
 const divStyle = "flex gap-4 !bg-black/5 w-fit mx-auto mt-8";
 const getStartedButtonStyle = twMerge(
   buttonStyle,
   primaryButtonStyle,
-  "w-[35vw] text-4xl px-4 py-8 md:w-[30vw] rounded-full"
+  "w-[35vw] lg:text-4xl lg:px-4 lg:py-8 md:w-[30vw]"
 );
 const contactButtonStyle = twMerge(
   buttonStyle,
-  "w-[35vw] bg-black text-white px4 py-8  md:!w-[30vw] text-4xl border border-white/20 rounded-full"
+  "w-[35vw] bg-black text-white lg:px4 lg:py-8  md:!w-[30vw] lg:text-4xl border border-white/20"
 );
